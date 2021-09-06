@@ -23,9 +23,12 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 REPLY_MARKUP = InlineKeyboardMarkup(
-    [
-        [InlineKeyboardButton("🚀 Deploy Yours Now! 😍", url="https://github.com/XMYSTERlOUSX/mega-link-downloader-bot")],
-    ]
+    [[
+        InlineKeyboardButton('Developer 👨‍💻', url='https://telegram.me/Amani_m_h_d'),
+        InlineKeyboardButton('📜 Updates Channel', url='https://telegram.me/my_test_botz')
+        ],[
+        InlineKeyboardButton('Other Bots 🤖',  url='https://telegram.me/my_test_botz/47')
+        ]]
 )
 
 @Client.on_message(filters.command("help"))
